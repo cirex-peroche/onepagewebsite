@@ -1,0 +1,176 @@
+<!-- cirexservices.html -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Cirex Services</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/css/bootstrap.min.css"
+          integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+        
+        <script src="JS/one_page_website.js" defer></script>
+        <link rel="stylesheet" type="text/css" href="css/one_page_website.css"/>
+</head>
+<body>
+
+    <!-- The Modal -->
+    <div id="lightboxModal" class="modal" onclick="closeModal()">
+        <span class="close">&times;</span>
+        <img class="modal-content" id="modalImage">
+        <div id="caption"></div>
+    </div>
+
+
+<div class="container">
+    <!-- navbar -->
+    <nav class="navbar sticky-top navbar-expand-lg bg-info">
+        <div class="container-fluid">
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item active">
+                        <a class="nav-link text-light" href="#about">About Us</a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link text-light" href="#ourservices">Our Services</a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link text-light" href="#contactus">Contact Us!</a>
+                    </li>
+                </ul>
+                <form class="d-flex" role="search">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-primary text-light" type="submit">Search</button>
+                </form>
+            </div>
+        </div>
+    </nav>
+    <!-- /navbar -->
+
+    <!-- title -->
+    <div class="jumbotron jumbotron-fluid bg-info text-center">
+        <div class="container">
+            <h1 class="display-4 text-light">Cirex Services</h1>
+            <p class="lead text-light">DJ Services, Photography, 360 Videobooth, Photobooth</p>
+        </div>
+    </div>
+    <!-- /title -->
+
+    <!-- About section -->
+    <div class="container">
+        <div class="row align-items-start">
+            <div class="col">
+                <img class="img-fluid lightbox-img" src="./images/cirex.png" alt="Cirex Services Logo" >
+            </div>
+            <div class="col">
+                <h3 id="about">About Us:</h3>
+                <p>With years of experience in both industries, we have honed the art of setting the perfect atmosphere—whether it's through electrifying beats that keep the dance floor alive or capturing the raw emotions and fleeting moments that make each event unique. From high-energy parties and corporate gatherings to elegant weddings and intimate celebrations, our expertise ensures every occasion is a seamless fusion of music and visual storytelling.</p>
+            </div>
+            <div class="col">
+                <h3>Our Services:</h3>
+                <ul class="list-group">
+                    <li class="list-group-item">
+                        <a class="nav-link active" href="#">Cirex DJ Services</a>
+                    </li>
+                    <li class="list-group-item">
+                        <a class="nav-link" href="#">Cirex Photobooth & 360 Videobooth</a>
+                    </li>
+                    <li class="list-group-item">
+                        <a class="nav-link" href="#">Event Photography</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <!-- /About section -->
+
+    <!-- ourservices -->
+    <div class="container">
+        <h3 id="ourservices">Our Services:</h3>
+        <div class="row">
+            <!-- DJ -->
+            <div class="col-sm-4">
+                <div class="card h-100">
+                    <img class="card-img-top h-50 lightbox-img" src="./images/4.png" alt="DJ Services">
+                    <div class="card-body">
+                        <h5 class="card-title">DJ Services with Lights and Sounds</h5>
+                        <p class="card-text">A stunning lights and sound setup is the backbone of any unforgettable event, creating an immersive atmosphere that enhances the energy and mood. Whether for weddings, corporate events, concerts, private parties, or nightclubs, a professional lighting and sound system transforms any venue into a visually and sonically captivating experience.</p>
+                        <h6>
+                            <span class="badge badge-secondary bg-info text-light">Stunning Lights</span>
+                            <span class="badge badge-secondary bg-info text-light">High Speakers and Equipments</span>
+                        </h6>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Booth -->
+            <div class="col-sm-4">
+                <div class="card h-100">
+                    <img class="card-img-top h-50 lightbox-img" src="./images/7.png" alt="Photobooth and 360 Videobooth">
+                    <div class="card-body">
+                        <h5 class="card-title">Photobooth and 360 Videobooth</h5>
+                        <p class="card-text">A photo booth with printout capability is a fantastic addition to any event, providing guests with instant keepsakes and lasting memories. Unlike traditional photo booths, a 360 video booth uses a rotating camera to create immersive, cinematic clips that guests can instantly share on social media. </p>
+                        <h6>
+                            <span class="badge badge-secondary bg-info text-light">Customized Design</span>
+                            <span class="badge badge-secondary bg-info text-light">Stunning Light Effects</span>
+                        </h6>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Photography -->
+            <div class="col-sm-4">
+                <div class="card h-100">
+                    <img class="card-img-top h-50 lightbox-img" src="./images/3.png" alt="Event Photography">
+                    <div class="card-body">
+                        <h5 class="card-title">Event Photography</h5>
+                        <p class="card-text">Event photography that captures high-quality images during various occasions, from weddings and corporate events to parties and galas.</p>
+                        <h6>
+                            <span class="badge badge-secondary bg-info text-light">Professional Crew</span>
+                            <span class="badge badge-secondary bg-info text-light">Experience and Quality</span>
+                        </h6>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- /Our Services -->
+
+    <!-- contact us -->
+    <div class="text-center">
+        <form id="contactus">
+            <h1 class="text-primary my-5">Sign up and get a chance of winning freebies!</h1>
+            <div class="mb-3">
+                <input type="email" class="form-control" id="exampleInputEmail" aria-describedby="emailHelp" placeholder="Enter email">
+            </div>
+            <button type="submit" class="btn btn-primary">Submit</button>
+        </form>
+    </div>
+    <!-- /deals -->
+
+    <!-- footer -->
+    <div class="container my-5">
+        <ul class="nav">
+            <li class="nav-item">
+                <small><a class="nav-link active" href="#">Our Clients</a></small>
+            </li>
+            <li class="nav-item">
+                <small><a class="nav-link" href="https://cirexservices.my.canva.site/">https://cirexservices.my.canva.site/</a></small>
+            </li>
+            <li class="nav-item">
+                <small><a class="nav-link" href="#">info@cirexservices.ca</a></small>
+            </li>
+            <li class="nav-item">
+                <small><a class="nav-link" href="#">&copy; 2025 Copyright&reg;</a></small>
+            </li>
+        </ul>
+    </div>
+    <!-- /footer -->
+
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/js/bootstrap.min.js"
+        integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+        crossorigin="anonymous"></script>
+</body>
+</html>
